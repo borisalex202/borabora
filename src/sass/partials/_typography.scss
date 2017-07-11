@@ -1,0 +1,64 @@
+a {
+  color: $link-color;
+  font-size: 18px;
+  text-decoration: underline;
+  @include transition($transition);
+
+  &:hover {
+    color: $link-color;
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+p {
+  font-size: 18px;
+  color: $text-color;
+}
+a,
+input,
+button {
+  outline: none !important;
+}
+textarea {
+  resize: none;
+  max-height: 80px;
+}
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  line-height: 30px;
+}
+strong {
+  font-weight: 700;
+}
+em,
+i {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 35px;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+}
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 25px;
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+}
